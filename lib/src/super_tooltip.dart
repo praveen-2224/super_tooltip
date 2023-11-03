@@ -22,6 +22,7 @@ class SuperTooltip extends StatefulWidget {
   final Color? shadowColor;
   final double? shadowBlurRadius;
   final double? shadowSpreadRadius;
+  final Offset? shadowOffset;
   final double? top, right, bottom, left;
   final ShowCloseButton? showCloseButton;
   final Color? closeButtonColor;
@@ -74,6 +75,7 @@ class SuperTooltip extends StatefulWidget {
     this.shadowColor,
     this.shadowBlurRadius,
     this.shadowSpreadRadius,
+    this.shadowOffset,
     this.top,
     this.right,
     this.bottom,
@@ -380,6 +382,7 @@ class _SuperTooltipState extends State<SuperTooltip>
                                         blurRadius: shadowBlurRadius,
                                         spreadRadius: shadowSpreadRadius,
                                         color: shadowColor,
+                                        offset: shadowOffset,
                                       ),
                                     ]
                                   : null,
